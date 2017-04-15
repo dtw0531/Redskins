@@ -2,3 +2,25 @@
 	StyleSheet
 ******************/
 
+
+
+/*****************
+background image
+*****************/
+body {
+	background-image: url(http://stadiumdb.com/pic-projects/redskins_stadium/redskins_stadium06.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+/***************
+Nav Bar
+***************/
+
+ul li {
+	display: inline;
+	padding: 100px;
+	text-align: center;
+}
