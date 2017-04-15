@@ -5,22 +5,64 @@
 
 
 /*****************
-background image
+background
 *****************/
 body {
-	background-image: url(http://stadiumdb.com/pic-projects/redskins_stadium/redskins_stadium06.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-color: #800020
+
 }
 
+
+.back {
+	display: block;
+	margin: 0;
+	width: 100%;
+	opacity: 0.1;
+	border-bottom: 20px
+}
 
 
 /***************
 Nav Bar
 ***************/
 
-ul li {
-	display: inline;
-	padding: 100px;
-	text-align: center;
+
+.menu {float: right;}
+
+.menu  {
+	list-style-type: none;
+    display: inline;
+    color: #800020;
+    text-align: center;
+	margin: 0;
+    padding: 50px 50px;
+    text-decoration: none;
+	background-color: #800020;
+	border-color: gold;
+	float: right
+}
+
+.menu a:hover:not(.active) {background-color: gold;}
+
+.menu .active {background-color: gold;}
+
+
+@media screen and (max-width: 600px){
+    .menu,
+    .menu {float: none;}
+}
+
+
+
+/*****************
+Body styling
+*****************/
+
+h1, li {
+	color: gold
+}
+
+.slide {
+	margin-top: 50px;
+	align-content: center;
 }
