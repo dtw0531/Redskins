@@ -2,8 +2,6 @@
 	StyleSheet
 ******************/
 
-
-
 /*****************
 background
 *****************/
@@ -14,11 +12,10 @@ body {
 
 
 .back {
-	display: block;
+	display: inline-block;
 	margin: 0;
 	width: 100%;
-	opacity: 0.1;
-	border-bottom: 20px
+	opacity: 0.4;
 }
 
 
@@ -26,40 +23,70 @@ body {
 Nav Bar
 ***************/
 
-
-.menu {float: right;}
-
-.menu  {
-	list-style-type: none;
-    display: inline;
-    color: #800020;
-    text-align: center;
-	margin: 0;
-    padding: 50px 50px;
-    text-decoration: none;
-	background-color: #800020;
-	border-color: gold;
-	float: right
+ul{
+	position: fixed;
+	display: inline-flex;
+	background-color: gold;
+	overflow: hidden;
+	height: 24px;
+	border-radius: 3px;
 }
 
-.menu a:hover:not(.active) {background-color: gold;}
+li {
+	display: inline;
 
-.menu .active {background-color: gold;}
+}
+
+li a{
+	color: #800020;
+	text-align: center;
+	text-decoration: none;
+	font-size: 24px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.menu li a:hover:not(.active) {
+		color: gold;
+		background-color: #800020;
+}
+
+.active {background-color: gold;}
+
+
+.selected {
+	color: #800020;
+	background-color: darkgoldenrod;
+	width: inherit;
+}
 
 
 @media screen and (max-width: 600px){
-    .menu,
-    .menu {float: none;}
-}
 
+    .menu {
+		display: block;
+		float: left;
+		width: 45%;
+		clear: left;
+	}
+
+
+
+.menu li a:hover:not(.active) {background-color: #800020;}
+
+.active {background-color: gold;}
+
+}
 
 
 /*****************
 Body styling
 *****************/
 
-h1, li {
-	color: gold
+h1 {
+	color: gold;
+	text-align: center;
+	text-decoration: none;
 }
 
 .slide {
